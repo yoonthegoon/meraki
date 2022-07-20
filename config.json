@@ -1,0 +1,8 @@
+{
+  "MERAKI_KEY": "meraki API key goes here",
+  "network id": "network id goes here",
+  "school": 0,
+  "address": "school address goes here",
+  "lat": 40,
+  "lon": -74
+}

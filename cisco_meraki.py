@@ -54,14 +54,13 @@ def main(network_id: str, school: int = None, address: str = None, lat: float = 
     
     access_points = []
     for i in new_devices:
-        if i != None:
+        if i is not None:
             access_points.append(i)
 
     access_points.sort(key=lambda ap: ap['name'])
 
     if school:
         [update_device_management_interface(school, ip, access_point) for ip, access_point in enumerate(access_points)]
-    
 
     # Print all devices
     devices = DASHBOARD.networks.getNetworkDevices(network_id)
